@@ -24,8 +24,8 @@ public class TestForce1 : MonoBehaviour
         //Vector3 torque = Vector3.Cross(pos - cent_w, force);
         //rgd.AddTorque(torque);
 
-        Vector3 r_local = transform.InverseTransformVector(pos - cent_w);
-        Vector3 f_local = transform.InverseTransformVector(force);
+        Vector3 r_local = transform.InverseTransformDirection(pos - cent_w);
+        Vector3 f_local = transform.InverseTransformDirection(force);
         Vector3 torque_local = Vector3.Cross(r_local, f_local);
         rgd.AddRelativeTorque(torque_local);
     }

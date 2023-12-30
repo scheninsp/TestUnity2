@@ -22,7 +22,7 @@ public class TestForce2 : MonoBehaviour
 
 
         Vector3 torque = Vector3.Cross(pos - cent_w, force);
-        Vector3 torque_local = Vector3.Cross(transform.InverseTransformVector(pos - cent_w), transform.InverseTransformVector(force));
+        Vector3 torque_local = transform.InverseTransformDirection(torque);
 
         //rgd.AddTorque(torque);
         float[][] mat = new float[][] {

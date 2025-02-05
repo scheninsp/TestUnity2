@@ -59,6 +59,7 @@
     <Compile Include="Assets\Scripts\ContentAreaTouch.cs" />
     <Compile Include="Assets\Scripts\EasyLayout\EasyLayoutEnums.cs" />
     <Compile Include="Assets\Scripts\StandardLayoutBridge.cs" />
+    <Compile Include="Assets\Scripts\RESimpleTable.cs" />
     <Compile Include="Assets\Scripts\DefaultSelector.cs" />
     <Compile Include="Assets\Scripts\IListViewCallbacks.cs" />
     <Compile Include="Assets\Scripts\Updater\IFixedUpdatable.cs" />
@@ -96,6 +97,7 @@
     <Compile Include="Assets\Scripts\External\PoolEnumeratorMode.cs" />
     <Compile Include="Assets\Scripts\REStyleText.cs" />
     <Compile Include="Assets\Scripts\EasyLayout\Padding.cs" />
+    <Compile Include="Assets\Scripts\InstanceSizes.cs" />
     <Compile Include="Assets\Scripts\EasyLayout\EasyLayoutExtensions.cs" />
     <Compile Include="Assets\Scripts\EasyLayout\EasyLayoutStaggeredSettings.cs" />
     <Compile Include="Assets\Scripts\Updater\IUpdatable.cs" />
@@ -121,6 +123,7 @@
     <Compile Include="Assets\Scripts\External\InstanceID.cs" />
     <Compile Include="Assets\Scripts\EasyLayout\EasyLayoutFlexOrStaggered.cs" />
     <Compile Include="Assets\Scripts\EasyLayout\EasyLayoutBaseType.cs" />
+    <Compile Include="Assets\Scripts\External\DataBindFieldAttribute.cs" />
     <Compile Include="Assets\Scripts\TableDataMgr.cs" />
     <Compile Include="Assets\Scripts\External\UtilitiesTime.cs" />
     <Compile Include="Assets\Scripts\REListViewComponentPool.cs" />
@@ -131,9 +134,6 @@
     <Compile Include="Assets\Scripts\REStyleImage.cs" />
     <Compile Include="Assets\Scripts\External\IObservable.cs" />
     <Compile Include="Assets\Scripts\External\UtilitiesCollections.cs" />
-    <Compile Include="Assets\Scripts\RESimpleTable.cs" />
-    <Compile Include="Assets\Scripts\External\DataBindFieldAttribute.cs" />
-    <Compile Include="Assets\Scripts\InstanceSizes.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">

@@ -96,8 +96,21 @@ public abstract class REListViewCustomBase : UIBehaviour
 		}
 	}
 
+	protected Vector2 ScrollRectSize;
+
 	protected abstract void SetScrollRect(ScrollRect newScrollRect);
 
+	protected void UpdateScrollRectSize()
+	{
+		if (scrollRect == null)
+		{
+			return;
+		}
+
+		ScrollRectSize = (scrollRect.transform as RectTransform).rect.size;
+		ScrollRectSize.x = float.IsNaN(ScrollRectSize.x) ? 1f : Mathf.Max(ScrollRectSize.x, 1f);
+		ScrollRectSize.y = float.IsNaN(ScrollRectSize.y) ? 1f : Mathf.Max(ScrollRectSize.y, 1f);
+	}
 
 	protected override void OnEnable()
     {

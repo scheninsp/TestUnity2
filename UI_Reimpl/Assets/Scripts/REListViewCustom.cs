@@ -24,7 +24,6 @@ public partial class REListViewCustom<TItemView, TItem> : REListViewCustomBase
 
     protected float LastScrollingTime;
     protected bool Scrolling;
-    protected Vector2 ScrollRectSize;
 
     [SerializeField]
     [Tooltip("Custom scroll inertia until reach item center.")]
@@ -246,6 +245,8 @@ public partial class REListViewCustom<TItemView, TItem> : REListViewCustomBase
         {
             ListRenderer.Enable();
             scrollRect.onValueChanged.AddListener(OnScrollRectUpdate);
+
+            UpdateScrollRectSize();
         }
     }
 

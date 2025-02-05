@@ -312,11 +312,6 @@ namespace UIWidgets
 				return;
 			}
 
-			if (instance.Owner != null)
-			{
-				Callbacks[new InstanceID(instance.Owner)].ComponentCached(instance);
-			}
-
 			instance.MovedToCache();
 			instance.Index = -1;
 			instance.gameObject.SetActive(false);
